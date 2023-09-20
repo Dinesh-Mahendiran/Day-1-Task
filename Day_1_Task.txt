@@ -1,0 +1,98 @@
+1) Differenece between HTTP1.1 vs HTTP2
+
+HTTP1.1
+
+ * HTTP1.1 is HyperText Transfer Protocol.
+ * HTTP1.1 is original version of HTTP protocols which is used for communication between web server
+   and client such as web browsers.
+ * It introduced standadization,new features and improved new efficiencey of protocols through the
+   better caching,encoding,reusing of HTTP connections,and pipeling HTTP request.
+ * It loads resources one after other,so if one resources cannot be loaded,it blocks all other resources
+   behind it.
+ * It works on textual format.
+ * It uses requests resources Inlining for use getting multiple pages.
+ * It compresses data by itself.
+ * Client (browser) has send a request to server using GET & POST method. 
+ * Server responds with requested resources.
+   For Example :Image alongside the status of what it did to the client's request.
+ * Persistent connetions:
+     It supports persistent connections, which allows multiple request and response can be sent 
+	 to over same TCP connections.This reduces the overhead of establishing the new connections 
+	 for each and every request and improving the performance of protocols.
+ * Pipelining:
+    It supports pipelining,which allows multiple request can be sent without waiting corresponding
+	response.This reduce latency of protocols and improves the performance.
+ * Caching:
+    It introduced several caching features , including the ability to specify cache control directives,
+	which can reduce the amount of data that needs to transmitted between client and server.
+ * Chunked Transfer encoding :
+    It is ability to transfer the large amount of data in chunks , which can improve the efficiency of 
+	data transfer and reduce the latency.
+ * Improved error handling:
+    It introduced more detailed error codes and improved error handling , which can help the developers troubleshoot
+	and resolve the issues more quickly.
+
+
+HTTP2:
+ 
+ * HTTP2 is HyperText Transfer protocols version 2.
+ * HTTP2 can send multiple stream of data at once using single TCP connections so that no resources
+   block any other resource.
+ * It works on binary protocols.
+ * It uses PUSH frame by server that collects all multiple pages.
+ * It uses HPACK for data compressions.
+ * It was designes to address some limitations and performance issue of HTTP1.1 and improve the speed 
+   and efficiency of web communications.
+ * Multiplexing:
+     . It allows the multiple request and response to single connections ,which can be  improves the
+	   performance of protocols by reducing the overhead of established new connections.
+ * Binary protocols:
+     . It uses binary protocols instead of text based protocols.It reduces the size of data transmitted between
+	   client and server improving the efficiency of protocols.
+ * Header Compression:
+     . It uses header compression to reduce the size of header data which is significant in HTTP1.1.
+	 . It also improves the efficiency of protocols and reduce the latency.
+ * Server push:
+     . It sends multiple response to single request, which can improve the speed and efficiency of 
+	 web applications.
+ Prioritization:
+     . It allows client to specify the priority of request , which can improve the responsiveness
+	   of protocols and reduce the latency.
+
+Drawbacks of HTTP2:
+
+    * Implemetation complexity.
+	* Server resource consumption.
+	* Interoperatability issues.
+	* Security concerns.
+	* Performace limitations.
+	
+	
+2) what is objects?
+
+ * Objects is like a containers that holds the different property.
+ * Objects stores the elements as a Key-value pair.
+ * Each key-value pair termed as "Property".
+ * Objects represents the curly braces {}.
+ * If you need to retrieve the specify data use dot operator.
+ 
+ Examples for objects:
+ 
+ var bike ={color:"black",milege:40,wheels:2,brand:"RX100"};
+ console.log(bike.color);
+ 
+ output:black.
+ 
+ console.log(bike.milege,bike.brand);
+ 
+ output:40,RX100.
+ 
+ console.log(bike);
+ 
+ output:{color:"black",milege:40,wheels:2,brand:"RX100"}.
+ 
+ 
+ 
+     
+     
+      
